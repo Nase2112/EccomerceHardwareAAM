@@ -1,20 +1,24 @@
-// import "../css/Footer.css";
+import "../css/Footer.css";
 
 const Footer = () => {
   return (
-    // <>
-    //   <div className="suscription-container">
-    //     <p>¡Recibe las mejores ofertas!</p>
-    //     <input type="email" id="Email" placeholder="Ingrese su correo" />
+    <div className="footer">
+     
+      <div className="suscription-container">
+         <p>¡Recibe las mejores ofertas!</p>
 
-    //     <button>Suscribirse</button>
+        <div className="correo">
+            <input type="email" id="Email" placeholder="Ingrese su correo" />
+            <button>Suscribirse</button>
+        </div>
 
-    //     <div className="copyRight">
-    //       <p>Derechos reservados @CopyRight</p>
-    //     </div>
-    //   </div>
-    // </>
-    <></>
+        </div> 
+
+         <div className="copyRight">
+           <p>Derechos reservados @CopyRight</p>
+      </div>
+       
+    </div>
   );
 };
 

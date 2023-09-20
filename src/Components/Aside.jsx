@@ -15,9 +15,6 @@ function Aside({ function1, function2 }) {
 
             <Search buscarValor={function1} handleSubmit={function2} />
 
-            <li>
-              <a href="">Suscribite</a>
-            </li>
           </ul>
         </nav>
       </aside>

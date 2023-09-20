@@ -1,0 +1,45 @@
+.footer{
+    background-color: #7B7B7B;
+    
+}
+
+.suscription-container{
+    margin-top: 2rem;
+    height:20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suscription-container > p{
+    font-weight: 600;
+}
+
+
+.correo{
+    margin-left: 1rem;
+}
+
+.correo > input{
+    height: 2rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.correo > button{
+    height: 2rem;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.copyRight{
+    font-size: small;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .suscription-container{
+        flex-direction: column;
+    }
+}

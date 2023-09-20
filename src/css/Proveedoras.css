@@ -9,7 +9,7 @@
 }
 
 .Select{
-    background-color: #000;
+    background-color: #4a48d69a;
 }
 
 .Select p{
@@ -23,9 +23,11 @@ input{
 @media (max-width: 768px ) {
     .Proveedoras-contenedor{
         border-radius: 0 0 15px 15px;
+        width: (80vw - 128px);
     }
 
     .Select{
     margin-top: 6rem;
+    height: 15vh;
     }
 }
