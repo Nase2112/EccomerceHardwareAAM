@@ -1,0 +1,49 @@
+ body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.containerInfo{
+    color: white;
+    background-color: #7B7B7B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.322);
+    font-weight: 500;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+}
+
+.containerImage img{
+    margin-top: 10px;
+   height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+.containerDescription {
+
+text-align: center;
+}
+
+button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+@media (max-width:768px){
+
+
+    .containerDescription{
+    color: aqua;
+    }
+} 

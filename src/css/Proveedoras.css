@@ -1,0 +1,31 @@
+.Proveedoras-contenedor {
+    padding: 1rem;
+    font-family: sans-serif;
+    border-radius: 0px 15px 15px 0;
+    height: 90px;
+    margin-top: 2rem;
+    margin: 0 auto;
+    width: calc(80vw - 128px);
+}
+
+.Select{
+    background-color: #000;
+}
+
+.Select p{
+    color: #fff;
+}
+
+input{
+    color: black;
+}
+
+@media (max-width: 768px ) {
+    .Proveedoras-contenedor{
+        border-radius: 0 0 15px 15px;
+    }
+
+    .Select{
+    margin-top: 6rem;
+    }
+}
