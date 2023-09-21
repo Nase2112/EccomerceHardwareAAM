@@ -27,7 +27,7 @@ export const Proveedoras = ({ handleChangeSelect, select }) => {
     <>
       <div className="Proveedoras-contenedor" id="select">
         <p>
-          <b>Selecciona una categoria: </b>
+          <b>Selecciona un categoria: </b>
           {select}
         </p>
         <Select

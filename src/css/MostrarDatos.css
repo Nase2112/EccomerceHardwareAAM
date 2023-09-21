@@ -19,6 +19,7 @@ body{
     height: 400px;
     width: 300px;
     gap: 1rem;
+    margin-bottom: 2rem;
     padding: 4px;
 }
 
@@ -47,8 +48,7 @@ button{
 @media (max-width:768px){
 
 
-    .containerInfo{
-        margin: 0 -1rem;}
+    
 } 
 
 

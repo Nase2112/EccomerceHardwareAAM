@@ -1,18 +1,18 @@
 import { useState } from "react";
 import "../css/Pages.css";
 
-const Pages = ({ nroPaginas, changePage, productsperPage }) => {
+const Pages = ({ nroPaginas, changePage, productsperPage,handleChangePage,currentPage }) => {
   // const [cantPaginas, setCantPaginas] = useState(4);
-  const [currentPage, setCurrentPage] = useState(1);
+  
 
   const handleChangePageSum = valor => {
     if (currentPage <= nroPaginas) {
-      setCurrentPage(currentPage + valor);
+      handleChangePage(currentPage + valor);
     }
   };
   const handleChangePageMinus = valor => {
     if (currentPage > 1) {
-      setCurrentPage(currentPage + valor);
+      handleChangePage(currentPage + valor);
     }
   };
 

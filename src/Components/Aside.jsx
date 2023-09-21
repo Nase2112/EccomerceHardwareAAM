@@ -3,8 +3,8 @@ import React from "react";
 import "../css/Aside.css";
 import Search from "./Search";
 
-function Aside({ function1, function2 }) {
-  const [open, setOpen] = useState(false);
+function Aside({ handleChangeText, handleSubmit }) {
+ // const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -13,7 +13,7 @@ function Aside({ function1, function2 }) {
           <ul className="lista">
             <div className="logo" />
 
-            <Search buscarValor={function1} handleSubmit={function2} />
+            <Search buscarValor={handleChangeText} handleSubmit={handleSubmit} />
 
           </ul>
         </nav>
