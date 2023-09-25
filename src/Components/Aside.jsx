@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import "../css/Aside.css";
+import { BrowserRouter, Routes,Route,Link,NavLink } from 'react-router-dom'
 import Search from "./Search";
 
 function Aside({ handleChangeText, handleSubmit }) {
@@ -12,8 +13,8 @@ function Aside({ handleChangeText, handleSubmit }) {
         <nav className="nav">
           <ul className="lista">
             <div className="logo" />
-
             <Search buscarValor={handleChangeText} handleSubmit={handleSubmit} />
+       
 
           </ul>
         </nav>

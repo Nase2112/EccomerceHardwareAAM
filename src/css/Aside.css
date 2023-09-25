@@ -91,7 +91,7 @@ background-color: #8280df;
 
 .lista {
   color: #ffff;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
