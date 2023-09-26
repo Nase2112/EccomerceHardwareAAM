@@ -23,9 +23,11 @@ body{
 }
 
 .rightContainer{
- 
   width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative
 }
 
 
@@ -35,17 +37,20 @@ img{
 }
 
 .listaProductos{
-  margin-top: 2rem;
+  margin-top: 10rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   
 
 }
 
 .selector{
- background-color: #4B48D6;
+position: absolute;
+left: 0;
  margin-left: 3rem;
   width: 50%;
 
@@ -57,10 +62,11 @@ img{
     flex-direction: column;
   }
 
+  .listaProductos{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
   .selector{
-   
-
-   
     margin-left: 0;
     width: 100%;
   

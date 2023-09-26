@@ -101,15 +101,16 @@ function App() {
               <MostrarDatos key={p.id} items={p} />
             ))}
 
-            <Pages
+           
+          </div>
+          
+          <Pages
               nroPaginas={Math.ceil(products.length / productsperPage)} //paginas totales redondeado para arriba
               changePage={handleChangePositionArray}
               productsperPage={productsperPage}
               handleChangePage={handleChangePage}
               currentPage={currentPage}
             />
-          </div>
-
 
         </div>
 
