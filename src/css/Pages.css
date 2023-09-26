@@ -4,7 +4,8 @@
     align-items: baseline;
     gap: 1rem;
     padding: 1rem;
-    background-color: #7B7B7B;
+    background: rgb(3,3,3);
+  background: linear-gradient(180deg, rgba(3,3,3,1) 0%, rgba(20,20,20,1) 100%);
     border: none;
     border-radius: 10px;
     color: white;

@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footer">
      
       <div className="suscription-container">
-         <p>¡Recibe las mejores ofertas!</p>
+         <h2>¡Recibe las mejores ofertas!</h2>
 
         <div className="correo">
             <input type="email" id="Email" placeholder="Ingrese su correo" />

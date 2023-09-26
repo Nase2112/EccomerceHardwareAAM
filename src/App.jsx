@@ -7,7 +7,7 @@ import Pages from "./Components/Pages";
 import Footer from "./Components/Footer";
 import Aside from "./Components/Aside";
 import Proveedoras from "./Components/Proveedoreas";
-//import { UserContextProvider } from "../UserContext";
+
 
 function App() {
   const [select, setSelect] = useState("");
@@ -95,7 +95,6 @@ function App() {
             />
           </div>
 
-          se muestra los productos
           <div className="listaProductos"> 
             {products.slice(positionArray, lastPositionArray).map(p => ( // solo agarra 3 items por el slice
               <MostrarDatos key={p.id} items={p} />

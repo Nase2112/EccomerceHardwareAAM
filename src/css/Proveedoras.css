@@ -7,6 +7,9 @@
     background-color: #4B48D6;
     
 }
+.Proveedoras-contenedor > p{
+    color: #fff;
+}
 
 .Select{
     background-color: #4a48d69a;
@@ -22,7 +25,8 @@ input{
 
 @media (max-width:768px ) {
     .Proveedoras-contenedor{
-width: 100%;
-margin-top: 0;
+    width: 100%;
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
     }
 }

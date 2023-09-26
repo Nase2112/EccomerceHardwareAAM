@@ -1,8 +1,7 @@
-import { useState } from "react";
 import "../css/Pages.css";
 
 const Pages = ({ nroPaginas, changePage, productsperPage,handleChangePage,currentPage }) => {
-  // const [cantPaginas, setCantPaginas] = useState(4);
+ 
   
 
   const handleChangePageSum = valor => {
