@@ -5,15 +5,16 @@
     font-family: Inter;
 }
 
-body{
+/* body{
     /* background-image: url(../../public/Banner.png);
     background-repeat:no-repeat;
     background-size: 100%; */
-}
+
+    
 .contacto{
     display: flex;
 }
-
+ 
 
 
 .contact_container{
