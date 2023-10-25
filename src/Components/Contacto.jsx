@@ -15,8 +15,8 @@ function Contacto (){
                         <input type="text" name="Nombre" placeholder="Nombre" id="" />
                         <input type="text" name="Apellido" placeholder="Apellido" id="" />
                     </div>
-                    <input type="text" name="Email" placeholder="Email" id="" />
-                    <input type="text" name="Asunto" placeholder="Asunto" id="" />
+                    <input className="input1" type="text" name="Email" placeholder="Email" id="" />
+                    <input className="input1" type="text" name="Asunto" placeholder="Asunto" id="" />
                 </form>
                 <button className="send_btn">Enviar</button>
             </div>

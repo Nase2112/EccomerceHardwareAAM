@@ -16,7 +16,6 @@ body{
 
 
 
-
 .contact_container{
     gap: 10%;
     color: white;
@@ -51,16 +50,23 @@ form{
     gap: 6rem;
 }
 
-input{
+.name_surname > input{
     color: white;
     background-color: rgba(245, 245, 220, 0);
     border:none ;
     border-bottom: 0.5px solid white;
 }
  
-input:focus{
+.name_surname > input:focus{
     background-color: #ffffff00;
     outline: none;
+}
+
+.input1 {
+    color: white;
+    background-color: rgba(245, 245, 220, 0);
+    border:none ;
+    border-bottom: 0.5px solid white;
 }
 
 ::placeholder{
