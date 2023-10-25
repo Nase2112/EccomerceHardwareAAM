@@ -7,6 +7,7 @@ import Pages from "./Components/Pages";
 import Footer from "./Components/Footer";
 import Aside from "./Components/Aside";
 import Proveedoras from "./Components/Proveedoreas";
+import Contacto from "./Components/Contacto"
 
 
 function App() {

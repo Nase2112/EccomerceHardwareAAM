@@ -1,5 +1,5 @@
 import React from "react";
-import "./contacto.css"
+import "../css/Contacto.css"
 
 
 
@@ -7,7 +7,7 @@ function Contacto (){
     return(
         <> 
         <div className="contacto">
-            <div className="aside"></div>
+            
             <div className="contact_container">
                 <h1 className="top_text">Contactanos</h1>
                 <form action="">
@@ -18,7 +18,7 @@ function Contacto (){
                     <input type="text" name="Email" placeholder="Email" id="" />
                     <input type="text" name="Asunto" placeholder="Asunto" id="" />
                 </form>
-                <button>Enviar</button>
+                <button className="send_btn">Enviar</button>
             </div>
         </div>
         </>
