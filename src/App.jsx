@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import Aside from "./Components/Aside";
 import Proveedoras from "./Components/Proveedoreas";
 import Contacto from "./Components/Contacto"
+import Ayuda from "./Components/Ayuda";
 
 
 function App() {
@@ -86,8 +87,8 @@ function App() {
         <Aside handleChangeText={handleChangeText} handleSubmit={handleSubmit} />
 
         <div className="rightContainer">
-
-          <div className="selector">
+            <Ayuda/>
+          {/* <div className="selector">
 
 
             <Proveedoras //categorias
@@ -110,7 +111,7 @@ function App() {
               productsperPage={productsperPage}
               handleChangePage={handleChangePage}
               currentPage={currentPage}
-            />
+            /> */}
 
         </div>
 
