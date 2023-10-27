@@ -25,7 +25,8 @@ Pasa por nuestra pagina y descubre todo lo que puedas llegar a comprar para mejo
 ## Lenguajes utilizados:
 <p align="left"> 
 <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript&perline=14" />
-
+<img src="./src/img/contacto.PNG" />
+<img src="./src/img/products.PNG" />
 ## Framework utilizado
 
 <img src="https://skillicons.dev/icons?i=react&perline=14" />
