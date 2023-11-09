@@ -12,7 +12,7 @@ const FormatoPagina = () => {
                 <Aside  />
 
                 <div className="rightContainer">
-                    {children}
+                   
 
                 </div>
 
