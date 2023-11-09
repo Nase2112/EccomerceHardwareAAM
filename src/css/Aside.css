@@ -5,7 +5,7 @@
   font-family: sans-serif;
   display: flex;
   width: 20rem;
-
+  min-height: 600px;
 }
 
 .aside div {
@@ -200,6 +200,7 @@ i{
 
   .aside{
     width: 0px;
+    min-height: auto;
   }
 
   
