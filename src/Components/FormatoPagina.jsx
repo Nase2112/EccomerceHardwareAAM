@@ -1,5 +1,6 @@
 import Aside from './Aside'
 import Footer from './Footer'
+import Ayuda from "./Ayuda"
 //import "../App.css";
 //import '../css/FormatoPagina.css'
 
