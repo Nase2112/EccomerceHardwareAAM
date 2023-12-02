@@ -25,7 +25,6 @@ const MostrarDatos = ({ items }) => {
     setCountProducts(countProducts + 1);
     setTotal(total + items.price);
   }
-  console.log("aaa",allProducts)
   return (
     <article className="containerInfo">
       <div className="containerImage">

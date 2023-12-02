@@ -1,30 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState, useContext } from "react";
 import "../App.css";
 import MostrarDatos from "../Components/MostrarDatos.jsx";
-import Search from "../Components/Search";
 import Pages from "../Components/Pages";
-import Footer from "../Components/Footer";
-import Aside from "../Components/Aside";
 import Proveedoras from "../Components/Proveedoreas";
 import FormatoPagina from "../Components/FormatoPagina.jsx";
 import {ProductsContext} from "../Context/ProductContext.jsx";
-import {useContext} from "react";
-
 
 const Home = () => { 
 const {products,copiaProducts,setProducts} = useContext (ProductsContext);
 const [select, setSelect] = useState("");
 const [search, setSearch] = useState("");
-const productsperPage = 3;
+const productsperPage = 6;
 const [lastPositionArray, setLastPositionArray] = useState(productsperPage);
 const [positionArray, setPositionArray] = useState(0);
 const [currentPage, setCurrentPage] = useState(1);
 
 
-    const handleChangeSelect = categoria => {  //Filtra por categoria elegida
+    const handleChangeSelect = categoria => {//Filtra por categoria elegida
         setSelect(categoria);
         setProducts(copiaProducts.filter(word => word.category === categoria))
-        if (search != "")  //disnto a nada 
+        if (search != "")  //distinto a nada 
         {
             setProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search) && prod.category === categoria));
             console.log("esto es select", select)
@@ -41,7 +36,7 @@ const [currentPage, setCurrentPage] = useState(1);
         setLastPositionArray(lastPositionArray + valor);
     };
 
-    const handleChangePage = (numero) => { //cambia de pagina
+    const handleChangePage = (numero) => { //cambia de paginav
         setCurrentPage(numero)
     }
 
@@ -52,9 +47,26 @@ const [currentPage, setCurrentPage] = useState(1);
 
     }
 
+    const handleChangeText = e => { //toma el valor del input de busqueda
+        setSearch(e.target.value.toLocaleLowerCase());
+
+    };
+
+    const handleSubmit = e => { //Filtra por texto escrito
+        e.preventDefault();
+
+        if (select != "")//disnto a nada 
+        {
+            setProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search) && prod.category === select));
+        } else {
+            setProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search)))
+        }
+        reset();
+    };
+
 
     return (
-        <FormatoPagina>
+        <FormatoPagina reset={reset} select={select} handleChangeText={handleChangeText} handleSubmit= {handleSubmit}>
 
                     <div className="selector">
 

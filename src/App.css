@@ -57,6 +57,11 @@ left: 0;
 
 }
 
+.carro{
+  position: absolute;
+  right: 40%;
+}
+
 @media (max-width: 768px) {
   .father{
     display: flex;
