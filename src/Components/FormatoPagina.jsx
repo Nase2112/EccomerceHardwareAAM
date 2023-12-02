@@ -12,8 +12,7 @@ const FormatoPagina = () => {
                 <Aside  />
 
                 <div className="rightContainer">
-                   
-
+                    <Ayuda/>
                 </div>
 
             </div>
