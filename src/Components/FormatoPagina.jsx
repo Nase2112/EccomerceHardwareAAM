@@ -1,6 +1,7 @@
 import Aside from './Aside'
 import Footer from './Footer'
 import Ayuda from "./Ayuda"
+import CarritoInfo from "./CarritoInfo" 
 //import "../App.css";
 //import '../css/FormatoPagina.css'
 
@@ -13,7 +14,7 @@ const FormatoPagina = () => {
                 <Aside  />
 
                 <div className="rightContainer">
-                    <Ayuda/>
+                    <CarritoInfo/>
                 </div>
 
             </div>
