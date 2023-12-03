@@ -217,7 +217,7 @@ i {
 
   .dropdown {
     position: absolute;
-    background-color: red;
+    background-color: #0c0c0c;
     top: 6.2rem;
 
     width: 100%;
@@ -234,6 +234,7 @@ i {
     padding: 1rem;
     align-items: start;
     gap: 1rem;
+   
 
 
   }

@@ -2,6 +2,7 @@ import "../css/MostrarDatos.css";
 
 import { ProductsContext } from "../Context/ProductContext.jsx";
 import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 
 const MostrarDatos = ({ items }) => {
   const { products, isLoading, error, copiaProducts, setProducts, allProducts, setAllProducts, total, setTotal, countProducts, setCountProducts } = useContext(ProductsContext);
@@ -29,7 +30,7 @@ const MostrarDatos = ({ items }) => {
   return (
     <article className="containerInfo">
       <div className="containerImage">
-        <img src={items.image} />
+      <NavLink to={`/producto/${items.id}`}> <img src={items.image} /></NavLink> 
       </div>
       <div className="containerDescription">
         <p>{items.title}</p>
