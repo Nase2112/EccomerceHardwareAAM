@@ -59,7 +59,7 @@ left: 0;
 
 .carro{
   position: absolute;
-  right: 5rem;
+  right: 1%;
   top: 3.5rem;
 }
 
@@ -81,7 +81,7 @@ left: 0;
 
   .carro{
     position: absolute;
-    right: 3.5rem;
+    right: 3%;
     top: 6rem;
   }
 }
