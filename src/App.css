@@ -59,7 +59,8 @@ left: 0;
 
 .carro{
   position: absolute;
-  right: 40%;
+  right: 5rem;
+  top: 3.5rem;
 }
 
 @media (max-width: 768px) {
@@ -76,5 +77,11 @@ left: 0;
     margin-left: 0;
     width: 100%;
   
+  }
+
+  .carro{
+    position: absolute;
+    right: 3.5rem;
+    top: 6rem;
   }
 }

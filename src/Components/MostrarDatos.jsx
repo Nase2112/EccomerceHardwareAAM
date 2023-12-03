@@ -21,9 +21,10 @@ const MostrarDatos = ({ items }) => {
     }
 
     
-    setAllProducts([...allProducts, {id: items.id, price: items.price, title: items.title, quantity : 1}]);
+    setAllProducts([...allProducts, {id: items.id, image:items.image, price: items.price, title: items.title, quantity : 1}]);
     setCountProducts(countProducts + 1);
     setTotal(total + items.price);
+    console.log("lo que se deberia mostrar",allProducts)
   }
   return (
     <article className="containerInfo">
@@ -34,6 +35,7 @@ const MostrarDatos = ({ items }) => {
         <p>{items.title}</p>
       </div>
       <button onClick={() => { onAddProduct(items) }}>Sumar al carrito</button>
+     
     </article>
   );
 };

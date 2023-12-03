@@ -5,6 +5,7 @@ import "./App.css";
 import FormatoPagina from './Components/FormatoPagina';
 import { ProductsContextProvider } from './Context/ProductContext';
 import Contacto from './Pages/Contacto';
+import Carro from './Pages/Carro';
 function App() {
 
 
@@ -17,8 +18,10 @@ function App() {
     <Routes>
         <Route path='/home' element={<Home/>}></Route>
         <Route path='/contacto' element={<Contacto/>}> </Route>
-        <Route path='/*' element={<h3>error404</h3>}> </Route>
+        <Route path='/CarritoInfo' element={<Carro/>}> </Route>
         <Route path='/formato' element={<FormatoPagina/>}> </Route>
+        <Route path='/*' element={<h3>error404</h3>}> </Route>
+       
       </Routes>
 
       </ProductsContextProvider>
