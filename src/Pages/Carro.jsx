@@ -4,21 +4,21 @@ import FormatoPagina from "../Components/FormatoPagina";
 import CarritoInfo from "../Components/CarritoInfo";
 import '../css/CarritoInfo.css'
 const Carro = () => {
-    const { allProducts, setAllProducts, total, setTotal, setCountProducts, countProducts } = useContext(ProductsContext)
+    const { allProducts, handleChangeAllProducts, total, handleChangeTotal, handleChangeCountProducts, countProducts } = useContext(ProductsContext)
 
     const onDelete = (prod) => {
 
         const results = allProducts.filter(pr => pr.id !== prod.id);
 
-        setTotal(total - prod.price * prod.quantity);
-        setCountProducts(countProducts - prod.quantity);
-        setAllProducts(results);
+        handleChangeTotal(total - prod.price * prod.quantity);
+        handleChangeCountProducts(countProducts - prod.quantity);
+        handleChangeAllProducts(results);
     }
 
     const vaciarCarrito = () =>{
-        setTotal(0);
-        setCountProducts(0);
-        setAllProducts([]);
+        handleChangeTotal(0);
+        handleChangeCountProducts(0);
+        handleChangeAllProducts([]);
     }
     console.log("lo que se deberia mostrar", allProducts)
     return (
@@ -33,6 +33,7 @@ const Carro = () => {
                                     <img className='img_carrito' src={prod.image} alt="" />
                                     <p>{prod.title} </p>
                                     <p>${prod.price}</p>
+                                    <p>cantidad : {prod.quantity}</p>
                                     <i onClick={() => { onDelete(prod) }} class="bi bi-trash3"></i>
 
                                 </div>

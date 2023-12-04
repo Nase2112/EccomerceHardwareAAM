@@ -4,8 +4,7 @@ import Footer from './Footer'
 import Carrito from "./Carrito.jsx";
 //import "../App.css";
 //import '../css/FormatoPagina.css'
-import { ProductsContext } from "../Context/ProductContext.jsx";
-import { useContext } from "react";
+
 
 
 const FormatoPagina = ({ children,handleChangeText,handleSubmit}) => {

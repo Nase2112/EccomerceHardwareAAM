@@ -1,9 +1,9 @@
 
 import React from "react";
 import "../css/Aside.css";
-import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom'
 import Search from "./Search";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 
 function Aside({ handleChangeText, handleSubmit }) {
@@ -25,9 +25,11 @@ function Aside({ handleChangeText, handleSubmit }) {
             <div className="dropdown">
 
               <div className={open ? "dropdown_contentopen" : "dropdown_content"}>
-                <div>Contacto</div>
-                <div>Envios</div> 
-                <div>Ayuda</div> 
+                 <div><NavLink to={"/contacto"} className="asdd">Contacto </NavLink></div>
+                 <div> <NavLink className="asdd">Envios </NavLink></div> 
+                 <div> <NavLink to={"/ayuda"} className="asdd"> Ayuda</NavLink></div> 
+            
+               
                 
               </div>
 

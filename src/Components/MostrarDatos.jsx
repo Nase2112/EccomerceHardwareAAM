@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 const MostrarDatos = ({ items }) => {
-  const { products, isLoading, error, copiaProducts, setProducts, allProducts, setAllProducts, total, setTotal, countProducts, setCountProducts } = useContext(ProductsContext);
+  const {allProducts, handleChangeAllProducts, total, handleChangeTotal, countProducts, handleChangeCountProducts } = useContext(ProductsContext);
 
   const onAddProduct = (items) => { //productos del carrito
 
@@ -15,16 +15,16 @@ const MostrarDatos = ({ items }) => {
           ? {...pr, quantity: pr.quantity + 1}
           : pr);
 
-          setCountProducts(countProducts + 1);
-          setTotal(total + items.price);
-          return setAllProducts([...lista])
+          handleChangeCountProducts(countProducts + 1);
+          handleChangeTotal(total + items.price);
+          return handleChangeAllProducts([...lista])
 
     }
 
     
-    setAllProducts([...allProducts, {id: items.id, image:items.image, price: items.price, title: items.title, quantity : 1}]);
-    setCountProducts(countProducts + 1);
-    setTotal(total + items.price);
+    handleChangeAllProducts([...allProducts, {id: items.id, image:items.image, price: items.price, title: items.title, quantity : 1}]);
+    handleChangeCountProducts(countProducts + 1);
+    handleChangeTotal(total + items.price);
     console.log("lo que se deberia mostrar",allProducts)
   }
   return (

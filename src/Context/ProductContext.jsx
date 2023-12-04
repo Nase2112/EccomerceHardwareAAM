@@ -14,6 +14,25 @@ export const ProductsContextProvider = ({children}) =>{
     const [total, setTotal] = useState(0);
     const[countProducts,setCountProducts] = useState(0);
 
+    const handleChangeTotal = (valor) => {
+        setTotal(valor)
+    }
+
+    const handleChangeAllProducts = (valor) =>{
+        setAllProducts(valor)
+    }
+
+    const handleChangeCountProducts = (valor) =>{
+        setCountProducts(valor)
+    }
+
+    const handleChange = (valor) =>{
+        setCopiaProducts(valor)
+    }
+
+    const handleChangeProducts = (valor) =>{
+        setProducts(valor)
+    }
     const fetchData = async () =>{
         try{
             setError(null);
@@ -35,7 +54,7 @@ export const ProductsContextProvider = ({children}) =>{
     }, [])
 
     return(
-        <ProductsContext.Provider value={{products, isLoading, error, copiaProducts,setProducts, allProducts, setAllProducts,total,setTotal,countProducts,setCountProducts }}>
+        <ProductsContext.Provider value={{products, isLoading, error, copiaProducts,handleChangeProducts, allProducts, handleChangeAllProducts,total,handleChangeTotal,countProducts,handleChangeCountProducts }}>
         {children}
         </ProductsContext.Provider>
     )

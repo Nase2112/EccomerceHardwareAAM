@@ -4,9 +4,10 @@ import Home from "./Pages/Home";
 import "./App.css";
 import FormatoPagina from './Components/FormatoPagina';
 import { ProductsContextProvider } from './Context/ProductContext';
-import Contacto from './Pages/Contacto';
+import Contactanos from './Pages/Contactanos';
 import Carro from './Pages/Carro';
 import Producto from './Pages/Producto'
+import Soporte from './Pages/Soporte'
 function App() {
 
 
@@ -18,11 +19,14 @@ function App() {
    
     <Routes>
         <Route path='/home' element={<Home/>}></Route>
-        <Route path='/contacto' element={<Contacto/>}> </Route>
+   
         <Route path='/CarritoInfo' element={<Carro/>}> </Route>
         <Route path='/formato' element={<FormatoPagina/>}> </Route>
         <Route path='/producto/:id' element={<Producto/>}> </Route>
+      
         <Route path='/*' element={<h3>error404</h3>}> </Route>
+        <Route path='/contacto' element={<Contactanos/>}> </Route>
+      <Route path='/ayuda' element={<Soporte/>}> </Route>
        
       </Routes>
 

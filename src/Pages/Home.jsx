@@ -7,7 +7,7 @@ import FormatoPagina from "../Components/FormatoPagina.jsx";
 import {ProductsContext} from "../Context/ProductContext.jsx";
 
 const Home = () => { 
-const {products,copiaProducts,setProducts} = useContext (ProductsContext);
+const {products,copiaProducts,handleChangeProducts} = useContext (ProductsContext);
 const [select, setSelect] = useState("");
 const [search, setSearch] = useState("");
 const productsperPage = 6;
@@ -18,13 +18,13 @@ const [currentPage, setCurrentPage] = useState(1);
 
     const handleChangeSelect = categoria => {//Filtra por categoria elegida
         setSelect(categoria);
-        setProducts(copiaProducts.filter(word => word.category === categoria))
+        handleChangeProducts(copiaProducts.filter(word => word.category === categoria))
         if (search != "")  //distinto a nada 
         {
-            setProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search) && prod.category === categoria));
+            handleChangeProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search) && prod.category === categoria));
             console.log("esto es select", select)
         } else {
-            setProducts(copiaProducts.filter(prod => prod.category === categoria))
+            handleChangeProducts(copiaProducts.filter(prod => prod.category === categoria))
         }
 
         reset();
@@ -57,9 +57,9 @@ const [currentPage, setCurrentPage] = useState(1);
 
         if (select != "")//disnto a nada 
         {
-            setProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search) && prod.category === select));
+            handleChangeProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search) && prod.category === select));
         } else {
-            setProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search)))
+            handleChangeProducts(copiaProducts.filter(prod => prod.title.toLocaleLowerCase().includes(search)))
         }
         reset();
     };

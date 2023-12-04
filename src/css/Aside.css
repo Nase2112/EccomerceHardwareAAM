@@ -1,3 +1,7 @@
+.asdd{
+  text-decoration: none;
+  color: white;
+}
 .aside {
   text-decoration: none;
   font-family: sans-serif;
@@ -17,6 +21,7 @@ form {
 }
 
 .search {
+ margin-left: 1.2rem;
   height: 2rem;
   width: 80%;
   border: none;
@@ -198,12 +203,13 @@ i {
   }
 
   .aside {
-    width: 0px;
+    
     min-height: auto;
   }
 
   .search {
     position: relative;
+    margin: 0;
   }
 
   .dropdown_title {

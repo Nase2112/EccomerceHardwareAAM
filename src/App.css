@@ -59,9 +59,16 @@ left: 0;
 
 .carro{
   position: absolute;
-  right: 1%;
-  top: 3.5rem;
+  right: 15%;
+  top: 4.5rem;
+  background-color: white;
+
 }
+.carro i{
+  height: 5rem;
+}
+
+
 
 @media (max-width: 768px) {
   .father{
@@ -75,13 +82,13 @@ left: 0;
   }
   .selector{
     margin-left: 0;
-    width: 100%;
+    width: 85%;
   
   }
 
   .carro{
     position: absolute;
     right: 3%;
-    top: 6rem;
+    top: 2.5rem;
   }
 }

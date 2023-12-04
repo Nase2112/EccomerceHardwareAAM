@@ -11,7 +11,7 @@ const Carrito = () => {
    
     return (
         <>
-            <NavLink to={"/CarritoInfo"}><button onClick={() => { setActive(!active) }}>{countProducts}</button></NavLink>
+            <NavLink to={"/CarritoInfo"}><i className="bi bi-cart3" onClick={() => { setActive(!active) }}>{countProducts}</i></NavLink>
         </>
     )
 }

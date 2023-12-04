@@ -1,9 +1,11 @@
 import FormatoPagina from "../Components/FormatoPagina";
-const Contacto = () =>{
+import Contacto from "../Components/Contacto"
+
+const Contactanos = () =>{
     return (
         <FormatoPagina>
-            <div><p>asdasdmsaodmasiodmasoisd</p></div>
+           <Contacto/>
         </FormatoPagina>
     )
 }
-export default Contacto;
+export default Contactanos;
