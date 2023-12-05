@@ -22,8 +22,8 @@
 input{
     color: black;
 }
-
-@media (max-width:768px ) {
+/*768*/
+@media (max-width:998px ) {
     .Proveedoras-contenedor{
     width: 100%;
     margin-top: 0;

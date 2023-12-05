@@ -26,7 +26,7 @@ function Aside({ handleChangeText, handleSubmit }) {
 
               <div className={open ? "dropdown_contentopen" : "dropdown_content"}>
                  <div><NavLink to={"/contacto"} className="asdd">Contacto </NavLink></div>
-                 <div> <NavLink className="asdd">Envios </NavLink></div> 
+                 <div> <NavLink to={"/"} className="asdd">Productos </NavLink></div> 
                  <div> <NavLink to={"/ayuda"} className="asdd"> Ayuda</NavLink></div> 
             
                

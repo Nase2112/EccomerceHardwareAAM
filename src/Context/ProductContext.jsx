@@ -54,6 +54,8 @@ export const ProductsContextProvider = ({children}) =>{
     }, [])
 
     return(
+        /*allPorducts se refiere a carrito*/
+        /*la suma del conternido del carrito*/ 
         <ProductsContext.Provider value={{products, isLoading, error, copiaProducts,handleChangeProducts, allProducts, handleChangeAllProducts,total,handleChangeTotal,countProducts,handleChangeCountProducts }}>
         {children}
         </ProductsContext.Provider>

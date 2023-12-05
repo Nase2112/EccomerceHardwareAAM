@@ -18,12 +18,11 @@ function App() {
 
    
     <Routes>
-        <Route path='/home' element={<Home/>}></Route>
+        <Route path='/' element={<Home/>}></Route>
    
         <Route path='/CarritoInfo' element={<Carro/>}> </Route>
         <Route path='/formato' element={<FormatoPagina/>}> </Route>
         <Route path='/producto/:id' element={<Producto/>}> </Route>
-      
         <Route path='/*' element={<h3>error404</h3>}> </Route>
         <Route path='/contacto' element={<Contactanos/>}> </Route>
       <Route path='/ayuda' element={<Soporte/>}> </Route>

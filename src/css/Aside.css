@@ -7,7 +7,8 @@
   font-family: sans-serif;
   display: flex;
   width: 20rem;
-  min-height: 600px;
+  min-height: 1120px;
+  
 }
 
 .logo {
@@ -187,8 +188,8 @@ i {
   display: none;
 }
 
-
-@media (max-width: 768px) {
+/*o puede ser 768*/
+@media (max-width: 998px) {
 
   .lista {
     display: flex;

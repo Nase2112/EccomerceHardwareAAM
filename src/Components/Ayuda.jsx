@@ -52,11 +52,7 @@ const Ayuda = () => {
             </div>
         </div>     
 
-        <div className='text_bottom'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur alias iste veniam quas, accusamus quam debitis vel, aperiam distinctio cumque est amet perspiciatis mollitia dignissimos sequi repudiandae commodi pariatur explicabo?
-            Ea ducimus ut nobis voluptate pariatur repudiandae corrupti, adipisci non laboriosam molestias labore impedit error, blanditiis dolorum tempore rerum dolores voluptatum maiores? Quod assumenda ipsam laboriosam unde ipsum dolor facere?
-            Asperiores sit nostrum ex perspiciatis praesentium natus magni pariatur similique assumenda voluptatum? Nemo quidem porro natus quod unde expedita provident repellat, quas quis eaque tempora voluptate harum, explicabo accusantium. Reiciendis!
-        </div>
+     
     </div>
   )
 }
